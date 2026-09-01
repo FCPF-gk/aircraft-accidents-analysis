@@ -180,8 +180,7 @@ Este proyecto demuestra experiencia práctica en:
 ```text
 ├── Maria-Canero_Accidentes_Aereos.pbix
 ├── README.md
-└── screenshots/
-    ├── vision-global.png
-    ├── companias-supervivencia.png
-    ├── analisis-temporal.png
-    └── modelos-tecnicos.png
+├── Visión Global de los Accidentes Aéreos.png
+├── Compañías y Supervivencia.png
+├── Análisis Temporal y Estacional.png
+└── Modelos Técnicos Asociados a Accidentes.png
