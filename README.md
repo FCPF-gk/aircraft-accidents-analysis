@@ -1,185 +1,187 @@
-# ✈️ Análisis de Accidentes Aéreos
+# ✈️ Análisis de Accidentes Aéreos — Dashboard en Power BI
 
 ## 📊 Descripción del proyecto
 
-Proyecto de análisis y visualización de datos desarrollado con **Power BI**, utilizando un modelo relacional y medidas **DAX** para analizar información relacionada con accidentes aéreos.
+Este proyecto consiste en el desarrollo de un dashboard interactivo en **Microsoft Power BI** para analizar accidentes aéreos ocurridos en distintos lugares y períodos.
 
-El objetivo es transformar los datos disponibles en información visual que permita identificar patrones relacionados con **compañías aéreas, aeronaves, motores, pasajeros, ubicación y evolución temporal de los accidentes**.
+El objetivo principal es transformar los datos de accidentes en información visual que permita identificar **patrones, tendencias y características asociadas a estos eventos**, facilitando su exploración y análisis.
 
-El proyecto fue desarrollado como parte de mi formación en **Data Analytics**, aplicando conceptos de modelado de datos, análisis exploratorio, visualización y generación de indicadores.
+El dashboard busca responder preguntas como:
+
+- ¿Qué aerolíneas presentan mayor cantidad de accidentes?
+- ¿Qué modelos de aviones y motores aparecen con mayor frecuencia?
+- ¿Cómo evolucionó la cantidad de accidentes a lo largo de los años?
+- ¿En qué meses y días de la semana se concentran más accidentes?
+- ¿En qué regiones geográficas se producen más accidentes?
+- ¿Qué aerolíneas presentan mayores tasas de supervivencia?
+- ¿Qué características técnicas aparecen asociadas con mayor frecuencia a los accidentes?
 
 ---
 
-## 🎯 Objetivos del análisis
+## 🎯 Objetivos
 
-El dashboard fue diseñado para responder diferentes preguntas relacionadas con los accidentes aéreos:
+- Explorar y analizar información histórica sobre accidentes aéreos.
+- Identificar patrones temporales y geográficos.
+- Analizar la frecuencia de accidentes por aerolínea.
+- Analizar modelos de aeronaves y motores asociados a los accidentes.
+- Evaluar indicadores relacionados con fallecimientos y supervivencia.
+- Construir visualizaciones interactivas para facilitar la interpretación de los datos.
+- Presentar la información de manera clara para usuarios técnicos y no técnicos.
 
-* ¿Qué compañías presentan mayor cantidad de accidentes?
-* ¿Qué modelos de aeronaves están involucrados con mayor frecuencia?
-* ¿Qué modelos de motor aparecen con mayor frecuencia?
-* ¿Cómo se distribuyen los accidentes geográficamente?
-* ¿Qué cantidad de pasajeros sobrevivieron?
-* ¿Qué compañías presentan mejores porcentajes de supervivencia?
-* ¿Qué años presentan mayor cantidad de accidentes?
-* ¿Qué meses concentran mayor cantidad de accidentes?
-* ¿Existe un patrón estacional en la ocurrencia de accidentes?
+---
+
+## 🛠️ Herramientas utilizadas
+
+- **Microsoft Power BI**
+- **Power Query** para transformación y preparación de datos
+- **DAX** para la creación de medidas y cálculos
+- **Modelo relacional de datos**
+- Visualizaciones interactivas y filtros de Power BI
+- Mapas para análisis geográfico
 
 ---
 
 ## 🗂️ Modelo de datos
 
-El proyecto utiliza un **modelo relacional** compuesto por las siguientes tablas:
+El proyecto utiliza un modelo relacional compuesto por diferentes tablas relacionadas con los accidentes, aerolíneas, vuelos, aeronaves, motores y pasajeros.
 
-* **Tabla_Accidente**
-* **Tabla_Aerolinea**
-* **Tabla_Avion**
-* **Tabla_Modelo_Motor**
-* **Tabla_Pasajeros**
-* **Tabla_Vuelo**
-* **Calendario**
-* **Medidas**
+Entre las principales entidades utilizadas se encuentran:
 
-La separación de la información en diferentes entidades permite relacionar los accidentes con las características de las aeronaves, aerolíneas, vuelos, motores y pasajeros.
+- `Tabla_Accidente`
+- `Tabla_Aerolinea`
+- `Tabla_Avion`
+- `Tabla_Modelo_Motor`
+- `Tabla_Vuelo`
+- `Tabla_Pasajeros`
+- `Calendario`
 
-La tabla **Calendario** se utiliza para facilitar el análisis temporal y la tabla **Medidas** centraliza las medidas DAX utilizadas en el dashboard.
+El modelo permite analizar la información desde diferentes dimensiones y aplicar filtros cruzados sobre las visualizaciones.
 
 ---
 
-## 📈 Dashboard
+# 📈 Dashboard
 
-El informe está organizado en diferentes secciones de análisis.
+## 1. Visión Global de los Accidentes Aéreos
 
-### 1. Análisis General de Accidentes
+Esta sección presenta una visión general del conjunto de datos mediante indicadores y visualizaciones relacionadas con:
 
-Permite obtener una visión general de los accidentes mediante:
+- Cantidad total de accidentes
+- Total de fallecidos
+- Tasa de supervivencia
+- Evolución de accidentes por año
+- Distribución de accidentes por continente
+- Distribución geográfica de los accidentes
 
-* Cantidad total de accidentes.
-* Distribución geográfica.
-* Evolución de los accidentes a lo largo del tiempo.
-* Distribución por continente.
-* Filtros temporales para explorar diferentes períodos.
+También incorpora filtros por año para facilitar el análisis de períodos específicos.
 
-### 2. Compañías y Supervivencia
+![Visión Global de los Accidentes Aéreos](screenshots/vision-global.png)
 
-Esta sección analiza la relación entre las compañías aéreas y los accidentes, incorporando información relacionada con la supervivencia de los pasajeros.
+---
 
-Incluye:
+## 2. Compañías y Supervivencia
 
-* Compañía con mayor cantidad de accidentes.
-* Accidentes por compañía.
-* Distribución geográfica.
-* Indicadores relacionados con supervivencia.
-* Comparación entre compañías.
+Esta sección analiza el comportamiento de las aerolíneas frente a los accidentes registrados.
 
-### 3. Modelos Técnicos Asociados a Accidentes
+Se incluyen indicadores y visualizaciones para analizar:
 
-Esta sección se enfoca en las características técnicas de las aeronaves involucradas.
+- Aerolínea con mayor cantidad de accidentes
+- Cantidad de accidentes
+- Cantidad de fallecidos
+- Porcentaje de supervivencia por aerolínea
+- Distribución geográfica de supervivientes
+
+La visualización permite comparar diferentes aerolíneas y explorar la relación entre accidentes y supervivencia.
+
+![Compañías y Supervivencia](screenshots/companias-supervivencia.png)
+
+---
+
+## 3. Análisis Temporal y Estacional
+
+Esta sección estudia la distribución temporal de los accidentes.
 
 Se analizan:
 
-* Modelos de aeronaves.
-* Modelos de motores.
-* Cantidad de accidentes asociados a cada modelo.
-* Filtros por período y ubicación.
+- Mes con mayor cantidad de accidentes
+- Día de la semana con mayor cantidad de accidentes
+- Cantidad de accidentes por mes
+- Distribución por estación del año
+- Evolución según año
+- Ubicación geográfica
 
-### 4. Análisis Temporal y Estacional
+Los filtros permiten analizar diferentes años y ubicaciones para explorar posibles patrones temporales.
 
-Se analiza la evolución temporal de los accidentes y su distribución a lo largo del año.
-
-Incluye:
-
-* Accidentes por año.
-* Accidentes por mes.
-* Mes con mayor cantidad de accidentes.
-* Distribución por estación.
-* Filtros temporales.
+![Análisis Temporal y Estacional](screenshots/analisis-temporal.png)
 
 ---
 
-## 🧮 Medidas DAX
+## 4. Modelos Técnicos Asociados a Accidentes
 
-Se desarrollaron medidas para obtener indicadores y resultados utilizados en las visualizaciones del informe.
+Esta sección analiza las características técnicas de las aeronaves involucradas en los accidentes.
 
-Entre ellas se encuentran medidas relacionadas con:
+Se incluyen análisis relacionados con:
 
-* Cantidad de accidentes.
-* Aerolínea con mayor cantidad de accidentes.
-* Modelo de avión más frecuente.
-* Mes con mayor cantidad de accidentes.
-* Indicadores de supervivencia.
+- Modelo de avión más frecuente
+- Modelo de motor más frecuente
+- Cantidad de accidentes por modelo de aeronave
+- Cantidad de accidentes por modelo de motor
+- Autonomía
+- Capacidad total
+- Año y ubicación
 
-El uso de medidas permite que los resultados respondan dinámicamente a los filtros aplicados en el dashboard.
+Esto permite explorar qué modelos aparecen con mayor frecuencia dentro del conjunto analizado.
 
----
-
-## 🛠️ Tecnologías utilizadas
-
-* **Power BI** — modelado de datos, visualización y desarrollo del dashboard.
-* **DAX (Data Analysis Expressions)** — creación de medidas e indicadores.
-* **SQL** — consulta y análisis de datos relacionales.
-* **Modelo relacional** — organización y relación de las diferentes entidades.
+![Modelos Técnicos Asociados a Accidentes](screenshots/modelos-tecnicos.png)
 
 ---
 
-## 🔎 Habilidades aplicadas
+# 🔎 Principales análisis
 
-Este proyecto permitió aplicar conocimientos de:
+El dashboard permite realizar análisis desde diferentes perspectivas:
 
-* Modelado de datos.
-* Análisis exploratorio de datos.
-* Consultas y manipulación de datos.
-* Creación de medidas DAX.
-* Análisis temporal.
-* Análisis de indicadores.
-* Diseño de dashboards interactivos.
-* Visualización de información.
-* Traducción de preguntas de análisis en indicadores y visualizaciones.
+### Temporal
+
+Permite estudiar la evolución de los accidentes a través de los años y analizar su distribución mensual, semanal y estacional.
+
+### Geográfica
+
+Los mapas permiten visualizar la distribución espacial de los accidentes y de los supervivientes.
+
+### Aerolíneas
+
+Permite comparar la cantidad de accidentes y los indicadores de supervivencia entre compañías.
+
+### Técnica
+
+Permite analizar los modelos de aeronaves y motores más frecuentes dentro de los accidentes registrados.
 
 ---
 
-## 📁 Estructura del proyecto
+# 💡 Competencias demostradas
+
+Este proyecto demuestra experiencia práctica en:
+
+- Preparación y transformación de datos
+- Modelado de datos
+- Construcción de relaciones entre tablas
+- Creación de medidas con DAX
+- Desarrollo de dashboards interactivos
+- Análisis exploratorio de datos
+- Análisis temporal
+- Análisis geográfico
+- Diseño de visualizaciones
+- Interpretación y comunicación de información
+- Construcción de indicadores para análisis de negocio
+
+---
+
+# 📁 Contenido del repositorio
 
 ```text
-aircraft-accidents-analysis/
-│
+├── Maria-Canero_Accidentes_Aereos.pbix
 ├── README.md
-│
-├── powerbi/
-│   └── Maria-Canero_Accidentes_Aereos.pbix
-│
-├── sql/
-│   └── consultas.sql
-│
-├── images/
-│   ├── dashboard-general.png
-│   ├── companias-supervivencia.png
-│   ├── modelos-tecnicos.png
-│   └── analisis-temporal.png
-│
-└── data/
-    └── README.md
-```
-
-> Los archivos de datos originales no se incluyen en el repositorio cuando su distribución está restringida o no es necesaria para reproducir el análisis.
-
----
-
-## 💡 Principales aprendizajes
-
-El desarrollo de este proyecto permitió integrar diferentes etapas de un flujo de análisis de datos:
-
-**Datos → Modelo relacional → Medidas DAX → Visualización → Análisis**
-
-El proyecto pone especial énfasis en transformar datos estructurados en indicadores y visualizaciones que permitan identificar patrones y responder preguntas concretas.
-
----
-
-## 👩‍💻 Autora
-
-**María Florencia Canero**
-
-Licenciada en Ciencias Oceanográficas — Universidad de Buenos Aires.
-
-Perfil orientado al análisis de datos, programación y procesamiento de series temporales, con experiencia en análisis de datos científicos y formación en **Data Analytics y Data Science**.
-
-🔗 [GitHub](https://github.com/FCPF-gk)
+└── screenshots/
+    ├── vision-global.png
+    ├── companias-supervivencia.png
+    ├── analisis-temporal.png
+    └── modelos-tecnicos.png
