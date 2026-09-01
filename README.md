@@ -74,7 +74,7 @@ Esta sección presenta una visión general del conjunto de datos mediante indica
 
 También incorpora filtros por año para facilitar el análisis de períodos específicos.
 
-![Visión Global de los Accidentes Aéreos](screenshots/vision-global.png)
+[Visión Global de los Accidentes Aéreos](screenshots/vision-global.png)
 
 ---
 
@@ -92,7 +92,7 @@ Se incluyen indicadores y visualizaciones para analizar:
 
 La visualización permite comparar diferentes aerolíneas y explorar la relación entre accidentes y supervivencia.
 
-![Compañías y Supervivencia](screenshots/companias-supervivencia.png)
+[Compañías y Supervivencia](screenshots/companias-supervivencia.png)
 
 ---
 
@@ -111,7 +111,7 @@ Se analizan:
 
 Los filtros permiten analizar diferentes años y ubicaciones para explorar posibles patrones temporales.
 
-![Análisis Temporal y Estacional](screenshots/analisis-temporal.png)
+[Análisis Temporal y Estacional](screenshots/analisis-temporal.png)
 
 ---
 
@@ -131,7 +131,7 @@ Se incluyen análisis relacionados con:
 
 Esto permite explorar qué modelos aparecen con mayor frecuencia dentro del conjunto analizado.
 
-![Modelos Técnicos Asociados a Accidentes](screenshots/modelos-tecnicos.png)
+[Modelos Técnicos Asociados a Accidentes](screenshots/modelos-tecnicos.png)
 
 ---
 
