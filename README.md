@@ -74,7 +74,7 @@ Esta sección presenta una visión general del conjunto de datos mediante indica
 
 También incorpora filtros por año para facilitar el análisis de períodos específicos.
 
-![Visión Global](./Visión%20Global%20de%20los%20Accidentes%20Aéreos.png
+![Visión Global](./Visión%20Global%20de%20los%20Accidentes%20Aéreos.png)
 
 ---
 
